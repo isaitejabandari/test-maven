@@ -25,7 +25,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-               ansiblePlaybook become: true, credentialsId: 'jekeni-ec2-private-key', disableHostKeyChecking: true, inventory: 'dev.inv', playbook: 'play.yml', vaultTmpPath: ''
+               ansiblePlaybook become: true, credentialsId: 'b84753ab-04b4-4545-a3b9-8b3c26bf2cee', disableHostKeyChecking: true, inventory: 'dev.inv', playbook: 'play.yml', vaultTmpPath: ''
             }
         }
     }
